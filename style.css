@@ -1,0 +1,113 @@
+body , h2{
+    margin: 0;
+}
+
+header{
+    height: 100vh;
+    background-image:url(./images/desktop/image-hero.jpg) ;
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:16px ;
+    /* position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: black; */
+}
+
+ul{
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding-left: 16px;
+}
+
+.main-text{
+    border: 1px solid white;
+    padding: 30px;
+    width: 30%;
+    margin: 8rem 1rem 1rem 5rem;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.section-1{
+    height: 100vh;
+    margin: 46px;
+    position: relative;
+}
+
+.description{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: white;
+    width: 30%;
+    height: 250px;
+    color: black;
+    padding: 40px;
+}
+
+.section-2{
+    height: 160vh;
+    margin: 46px;
+}
+
+.container-grid{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25% ;
+  grid-template-rows: 50% 50% ;
+  gap:15px;
+}
+
+.card{
+    position: relative;
+}
+
+.card h2{
+    color: rgb(233, 228, 228);
+    font-weight: 300;
+    font-size: 24px;
+    position: absolute;
+    top: 80%;
+    left: 0;
+}
+
+
+
+
+
+/* Responsive Design For Mobile  */
+
+@media screen and (min-width : 300px) and (max-width: 1200px) {
+    nav{
+        flex-direction: column;
+    }
+    ul li {
+        padding: 8px;
+    }
+
+    .main-text{
+        font-size: 16px;
+        width: 60%;
+    }
+
+    .section-1{
+        background-color: black;
+        margin: 0;
+    }
+    .section-2{
+        margin: 0;
+    }
+    .container-grid{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
